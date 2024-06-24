@@ -6,6 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### clone poject
+
+Clone the project using `git clone git clone https://github.com/alokt1994/react-practice.git`
+then enter the folder using `cd react-practice`
+
+### install node dependencies
+
+using `npm install`
+
 ### `npm start`
 
 Runs the app in the development mode.\
