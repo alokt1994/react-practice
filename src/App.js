@@ -10,12 +10,12 @@ import Todo from "./Todo/Todo";
 function App() {
   return (
     <div>
-      <Counter fname="Alok" lastname="Tiwari" />
-      {/* <Todo /> */}
-      <TextField />
+      {/* <Counter fname="Alok" lastname="Tiwari" /> */}
+      <Todo />
+      {/* <TextField />
       <Chechkbox />
       <TwoVariable />
-      <ArrayObject />
+      <ArrayObject /> */}
     </div>
   );
 }
