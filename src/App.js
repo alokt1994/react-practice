@@ -6,16 +6,20 @@ import TwoVariable from "./Component/TwoVariable";
 import ArrayObject from "./Component/ArrayObject";
 // import Todo from "./Todo/Todo";
 import Todo from "./Todo/Todo";
+import Basic from "./Basic";
+import FavoriteColor from "./Component/HookExample";
 
 function App() {
   return (
     <div>
-      {/* <Counter fname="Alok" lastname="Tiwari" /> */}
+      <Counter fname="Alok" lastname="Tiwari" />
       <Todo />
       {/* <TextField />
       <Chechkbox />
       <TwoVariable />
       <ArrayObject /> */}
+      <Basic />
+      <FavoriteColor />
     </div>
   );
 }

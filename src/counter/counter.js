@@ -3,6 +3,7 @@
 
 export function Counter(userDetails) {
   // const cyear = 2024;
+  console.log(userDetails);
   return (
     <div>
       {/* <h1>{`${userDetails.fname} ${userDetails.lastname}`}</h1>
