@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function FavoriteColor() {
+export function FavoriteColor() {
   const [color, setColor] = useState("red");
 
   return (
@@ -22,4 +22,4 @@ function FavoriteColor() {
   );
 }
 
-export default FavoriteColor;
+// export default FavoriteColor;

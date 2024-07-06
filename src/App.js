@@ -7,7 +7,7 @@ import ArrayObject from "./Component/ArrayObject";
 // import Todo from "./Todo/Todo";
 import Todo from "./Todo/Todo";
 import Basic from "./Basic";
-import FavoriteColor from "./Component/HookExample";
+import { FavoriteColor } from "./Component/HookExample";
 
 function App() {
   return (
