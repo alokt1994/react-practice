@@ -1,6 +1,6 @@
 import { Formik, Field, Form } from "formik";
 
-export default function UserForm() {
+export default function UserForm({ onUserFormSubmit }) {
   return (
     <div>
       <h1>Form</h1>
@@ -11,8 +11,10 @@ export default function UserForm() {
           email: "",
           mobile: "",
         }}
-        onSubmit={(values) => {
-          console.log(values);
+        onSubmit={(values, { resetForm }) => {
+          console.log("Submitted values", values);
+          onUserFormSubmit(values);
+          resetForm();
         }}
       >
         <Form>

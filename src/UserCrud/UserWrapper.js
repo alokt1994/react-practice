@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UserList from "./UserList";
+import UserForm from "./UserForm";
 
 export default function UserWrapper() {
   const [userList, setUserList] = useState([
@@ -14,6 +15,14 @@ export default function UserWrapper() {
 
   return (
     <div>
+      <UserForm
+        onUserFormSubmit={(values) => {
+          console.log("User Wrapper", values);
+          values.id = userList.length + 1;
+          userList.push(values);
+          setUserList([...userList]);
+        }}
+      />
       <UserList userList={userList} />
     </div>
   );
