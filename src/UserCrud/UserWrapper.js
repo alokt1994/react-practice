@@ -1,8 +1,8 @@
-import UserList from "./UserList";
 import React, { useState } from "react";
+import UserList from "./UserList";
 
 export default function UserWrapper() {
-  const [userListt, setUserListt] = useState([
+  const [userList, setUserList] = useState([
     {
       id: 1,
       firstName: "Alex",
@@ -11,9 +11,10 @@ export default function UserWrapper() {
       mobile: "1234567890",
     },
   ]);
+
   return (
     <div>
-      <UserList userList={userListt} />
+      <UserList userList={userList} />
     </div>
   );
 }
