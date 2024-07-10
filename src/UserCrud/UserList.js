@@ -1,8 +1,7 @@
 import React from "react";
 import "./User.css";
 
-export default function UserList({ userList }) {
-  // <-- Destructure props here
+export default function UserList({ userList, onUseDelete }) {
   return (
     <div>
       <table>
@@ -12,6 +11,7 @@ export default function UserList({ userList }) {
             <th>Last Name</th>
             <th>Email</th>
             <th>Mobile</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -22,6 +22,10 @@ export default function UserList({ userList }) {
                 <td>{user.lastName}</td>
                 <td>{user.email}</td>
                 <td>{user.mobile}</td>
+                <td>
+                  <button>Update</button> &nbsp;&nbsp;
+                  <button onClick={() => onUseDelete(user.id)}>Delete</button>
+                </td>
               </tr>
             );
           })}

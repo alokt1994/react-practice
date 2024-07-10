@@ -13,6 +13,11 @@ export default function UserWrapper() {
     },
   ]);
 
+  const onDelete = (id) => {
+    const users = userList.filter((user) => user.id !== id);
+    setUserList([...users]);
+  };
+
   return (
     <div>
       <UserForm
@@ -23,7 +28,7 @@ export default function UserWrapper() {
           setUserList([...userList]);
         }}
       />
-      <UserList userList={userList} />
+      <UserList userList={userList} onUseDelete={onDelete} />
     </div>
   );
 }
